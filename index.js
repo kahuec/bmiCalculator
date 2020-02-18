@@ -35,8 +35,8 @@ app.get("/bmiCalculator", function(req, res){
 app.post("/bmiCalculator", function(req, res){
 
 //converts the string input to a float number
-  var weight = parseFloat(req.body.weight);
-  var height = parseFloat(req.body.height);
+  var weight = parseInt(req.body.weight);
+  var height = parseInt(req.body.height);
 
 // does the computation of the input variables, as numbers
   var bmi = weight / (height * weight);
